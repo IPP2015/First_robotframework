@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230123 15:43:14.367" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="E:\batch220\RobotFramework\First_robotframework\test.robot">
+<test id="s1-t1" name="Open Google" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230123 15:43:14.867" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20230123 15:43:14.867" endtime="20230123 15:43:41.137"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230123 15:43:41.137" endtime="20230123 15:43:42.898"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230123 15:43:42.898" endtime="20230123 15:43:43.145"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="50%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230123 15:43:43.153" level="INFO">Executing JavaScript:
+document.body.style.zoom="50%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20230123 15:43:43.153" endtime="20230123 15:43:43.168"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230123 15:43:43.184" endtime="20230123 15:43:43.240"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.280" level="INFO">Current page contains element 'xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[1]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.240" endtime="20230123 15:43:43.280"/>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[1]/img</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230123 15:43:43.328" level="INFO">Current page contains image 'xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[1]/img'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.280" endtime="20230123 15:43:43.328"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath= /html/body/div[1]/div[1]/div/div[1]/div/div[2]/h5</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.368" level="INFO">Current page contains element 'xpath= /html/body/div[1]/div[1]/div/div[1]/div/div[2]/h5'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.328" endtime="20230123 15:43:43.368"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/div/div</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.408" level="INFO">Current page contains element 'xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/div/div'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.368" endtime="20230123 15:43:43.408"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=(//p[@class="oxd-text oxd-text--p"])[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.440" level="INFO">Current page contains element 'xpath=(//p[@class="oxd-text oxd-text--p"])[1]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.416" endtime="20230123 15:43:43.440"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=(//label[@class="oxd-label"])[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.480" level="INFO">Current page contains element 'xpath=(//label[@class="oxd-label"])[1]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.440" endtime="20230123 15:43:43.480"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//i[@class="oxd-icon bi-key oxd-input-group__label-icon"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.608" level="INFO">Current page contains element 'xpath=//i[@class="oxd-icon bi-key oxd-input-group__label-icon"]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.496" endtime="20230123 15:43:43.608"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230123 15:43:43.608" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.608" endtime="20230123 15:43:43.782"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=(//p[@class="oxd-text oxd-text--p"])[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.798" level="INFO">Current page contains element 'xpath=(//p[@class="oxd-text oxd-text--p"])[2]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.782" endtime="20230123 15:43:43.798"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=(//label[@class="oxd-label"])[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.878" level="INFO">Current page contains element 'xpath=(//label[@class="oxd-label"])[2]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.798" endtime="20230123 15:43:43.878"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//i[@class="oxd-icon bi-person oxd-input-group__label-icon"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.932" level="INFO">Current page contains element 'xpath=//i[@class="oxd-icon bi-person oxd-input-group__label-icon"]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.892" endtime="20230123 15:43:43.932"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//i[@class="oxd-icon bi-key oxd-input-group__label-icon"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230123 15:43:43.948" level="INFO">Current page contains element 'xpath=//i[@class="oxd-icon bi-key oxd-input-group__label-icon"]'.</msg>
+<status status="PASS" starttime="20230123 15:43:43.932" endtime="20230123 15:43:43.948"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath=//input[@placeholder="Password"]</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230123 15:43:43.948" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
+<msg timestamp="20230123 15:43:44.020" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230123 15:43:44.104" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230123 15:43:43.948" endtime="20230123 15:43:44.104"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.body.style.zoom="100%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230123 15:43:44.112" level="INFO">Executing JavaScript:
+document.body.style.zoom="100%"
+Without any arguments.</msg>
+<status status="PASS" starttime="20230123 15:43:44.104" endtime="20230123 15:43:44.120"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath= //button[contains(.,'Login')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230123 15:43:44.128" endtime="20230123 15:43:44.200"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath= //button[contains(.,'Login')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230123 15:43:44.200" level="INFO">Clicking element 'xpath= //button[contains(.,'Login')]'.</msg>
+<status status="PASS" starttime="20230123 15:43:44.200" endtime="20230123 15:43:46.557"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${urlexpected}</var>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230123 15:43:46.565" level="INFO">${urlexpected} = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index</msg>
+<status status="PASS" starttime="20230123 15:43:46.565" endtime="20230123 15:43:46.565"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230123 15:43:46.573" level="INFO">Page title is 'OrangeHRM'.</msg>
+<status status="PASS" starttime="20230123 15:43:46.565" endtime="20230123 15:43:46.573"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20230123 15:43:46.589" level="INFO">${url} = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index</msg>
+<status status="PASS" starttime="20230123 15:43:46.573" endtime="20230123 15:43:46.589"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230123 15:43:46.589" endtime="20230123 15:43:46.589"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${url}</arg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230123 15:43:46.589" endtime="20230123 15:43:46.589"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${url}&quot; == &quot;${urlexpected}&quot;">
+<kw name="Log To Console" library="BuiltIn">
+<arg>true</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230123 15:43:46.597" endtime="20230123 15:43:46.597"/>
+</kw>
+<status status="PASS" starttime="20230123 15:43:46.597" endtime="20230123 15:43:46.597"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>fail</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230123 15:43:46.597" endtime="20230123 15:43:46.597"/>
+</kw>
+<status status="NOT RUN" starttime="20230123 15:43:46.597" endtime="20230123 15:43:46.597"/>
+</branch>
+<status status="PASS" starttime="20230123 15:43:46.597" endtime="20230123 15:43:46.597"/>
+</if>
+<status status="PASS" starttime="20230123 15:43:14.867" endtime="20230123 15:43:46.597"/>
+</test>
+<status status="PASS" starttime="20230123 15:43:14.367" endtime="20230123 15:43:46.597"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
